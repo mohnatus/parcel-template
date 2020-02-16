@@ -6,13 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug",
+    "typescript": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@babel/plugin-proposal-function-bind": "^7.8.3",
+    "@babel/plugin-proposal-numeric-separator": "^7.8.3",
+    "@babel/plugin-syntax-export-default-from": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
     "parcel-bundler": "^1.12.4",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "typescript": "^3.7.5"
   }
 }

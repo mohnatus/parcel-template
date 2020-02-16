@@ -1,1 +1,1 @@
-export default (person) => console.log(`Bye, ${person.name}!`);
+export default (person) => `Bye, ${person.name}!`;

@@ -1,16 +1,22 @@
 {
-  "name": "parcel",
+  "name": "parcel-starter",
   "version": "1.0.0",
-  "description": "1. Создаем папку для проекта\r 2. Создаем package.json (npm init -y)",
+  "description": "Frontend project starter with Parcel",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rmdir -r dist",
+    "clear:cache": "rmdir -r .cache",
     "start": "parcel src/index.pug --open",
-    "build": "parcel build src/index.pug",
-    "typescript": "tsc --noEmit"
+    "build": "parcel build src/index.pug"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "parcel",
+    "starter",
+    "template",
+    "bundler"
+  ],
+  "author": "FurryCat",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -23,9 +29,9 @@
     "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^9.7.4",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-structurize": "^1.1.6",
     "postcss-modules": "^1.5.0",
     "pug": "^2.0.4",
-    "sass": "^1.25.0",
-    "typescript": "^3.7.5"
+    "sass": "^1.25.0"
   }
 }

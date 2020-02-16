@@ -1,0 +1,13 @@
+extends pug/layout/base.layout.pug
+
+include pug/mixin/card.mixin.pug
+
+block content
+  main
+    p Content
+    p
+      img(src="img/cat-large.jpg" width="400")
+    .cards
+      +card("Card 1")
+      +card("Card 2")
+      +card("Card 3")
